@@ -35,7 +35,7 @@ class StateMachine:
   def active(self, x=None):
     '''Esta rutina simula exclisivamnte esa FSM. Sería interesante crear simulación en parlelo con otras FSM'''
     if x==1:
-        print('Está pendiente de realizar la simulacón')
+        print('Está pendiente de realizar la simulación') # Se corrige la palabra simulación
 
 fsms=[None]*8
 
