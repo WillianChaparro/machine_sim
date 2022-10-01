@@ -19,7 +19,7 @@ class PIO(): # Definicion de clase de la PIO
     OUT_LOW='PIO.OUT_LOW'
     
 
-class StateMachine:
+class StateMachine: #Se define la maquina de estados
   def __init__(self, id_, program, freq=125000000, **kwargs):
         global sm_iniciandose,fsms
         sm_iniciandose=self
