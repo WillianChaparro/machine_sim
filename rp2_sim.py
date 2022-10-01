@@ -7,15 +7,15 @@ def asm_pio(*args, **kwargs):
         return compilador
     return decorador
 
-def decorador_instr(fun_inst):
+def decorador_instr(fun_inst): # Decorador de la funcion decoracion_inst
     def decoracion_instr(self,*args, **kwargs):
         fun_inst(self,*args, **kwargs)
         return None 
     return decoracion_instr
 
-pins='pins'
+pins='pins' # Se define Pins
 
-class PIO():
+class PIO(): # Definicion de clase de la PIO
     OUT_LOW='PIO.OUT_LOW'
     
 
