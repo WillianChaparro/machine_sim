@@ -42,7 +42,7 @@ fsms=[None]*8
 sm_iniciandose=None    
 
 
-class nop:
+class nop: # SE define clase NOP
     @decorador_instr
     def __init__(self,*args, **kwargs):
         global sm_iniciandose
