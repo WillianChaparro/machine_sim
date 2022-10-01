@@ -1,4 +1,4 @@
-def asm_pio(*args, **kwargs):
+def asm_pio(*args, **kwargs):# Decorador para el compilador
     def decorador(programa):
         def compilador():
             print("Parámetros", kwargs) 
@@ -65,7 +65,7 @@ class wrap_target(nop): #Se define la funcion WRAP Target
          super().__init__(*args, **kwargs) 
          pass 
   
-class wrap(nop):
+class wrap(nop): #Se define la funcion WRAP
     def __init__(self,*args, **kwargs):
          super().__init__(*args, **kwargs)
          pass 
