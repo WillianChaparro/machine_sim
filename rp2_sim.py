@@ -37,9 +37,9 @@ class StateMachine: #Se define la maquina de estados
     if x==1:
         print('Está pendiente de realizar la simulación del programa') # Se adicionan ..del programa
 
-fsms=[None]*8
+fsms=[None]*8 # Se crea lista de 8 elementos en NONE, para cada una de las maquinas de estados
 
-sm_iniciandose=None    
+sm_iniciandose=None  # Se inicializa la variable de maquina de estados con None  
 
 
 class nop: # SE define clase NOP
@@ -51,18 +51,18 @@ class nop: # SE define clase NOP
 
         pass
      
-    def __getitem__(self,name):
+    def __getitem__(self,name): # Funcion que llama el item en el que va la instrucción cuando tiene []
         #print('nop.__getattr__',name)
         pass
         
-class set(nop):
+class set(nop): # Se define clase set
     def __init__(self,*args, **kwargs):
         super().__init__(*args, **kwargs)
         pass
    
-class wrap_target(nop):
+class wrap_target(nop): #Se define la funcion WRAP Target
     def __init__(self,*args, **kwargs):
-         super().__init__(*args, **kwargs)
+         super().__init__(*args, **kwargs) 
          pass 
   
 class wrap(nop):
